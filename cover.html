@@ -20,6 +20,22 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <style>
+      .glass_style{
+        background: rgba( 21, 115, 71, 0.3 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 2px );
+        -webkit-backdrop-filter: blur( 2px );
+        border-radius: 10px;
+      }
+
+#bg_img {
+  background-image: url('assets/img/pexels-johannes-plenio-1632790\ FHD\ 1920x1080.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /*background-size: cover;*/
+  background-size: 100% 100%;
+      }
+
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -97,8 +113,11 @@
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
   </head>
-  <body class="d-flex h-100 text-center text-bg-dark">
-    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+
+
+
+  <body class="d-flex h-100 text-center text-bg-dark" id="bg_img">
+   <!-- <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
         <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
       </symbol>
@@ -147,28 +166,52 @@
           </button>
         </li>
       </ul>
-    </div>
+    </div> -->
 
     
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="mb-auto">
+<div class="cover-container d-flex w-100 h-100  mx-auto flex-column">
+
+  <nav class="navbar navbar-expand-lg"  style="background-color:rgba(21, 115, 71, 0.9)">
+    <div class="container-fluid">
+      <a class="navbar-brand link-light link-opacity-50-hover float-md-start mx-5 fw-bold" href="cover.html">BARSAN_tree</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse  justify-content-end mx-5" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link link-light active link-opacity-50-hover" aria-current="page" href="cover.html">Acasa</a>
+          <a class="nav-link link-light link-opacity-50-hover" href="#">Arborele</a>
+          <a class="nav-link link-light link-opacity-50-hover" href="#">Persoanele</a>
+          <a class="nav-link link-light link-opacity-50-hover" href="#">Imagini</a>
+          <a class="nav-link link-light link-opacity-50-hover" href="#">Mesaje</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+    
+    <!--
+    <header class="mb-auto px-5 py-3" style="background-color:rgba(17, 169, 45, 0.778)">
     <div>
-      <h4 class="float-md-start mb-0">BARSAN_tree</h4>
+      <h4 class="float-md-start px-3">BARSAN_tree</h4>
       <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link fw-bold py-1 px-1 active" aria-current="page" href="#">Acasa</a>
-        <a class="nav-link fw-bold py-1 px-1" href="#">Arborele</a>
-        <a class="nav-link fw-bold py-1 px-1" href="#">Persoanele</a>
-        <a class="nav-link fw-bold py-1 px-1" href="#">Imagini</a>
-        <a class="nav-link fw-bold py-1 px-1" href="#">Mesaje</a>
+        <a class="nav-link fw-bold px-3 link-light link-opacity-50-hover" aria-current="page" href="cover.html">Acasa</a>
+        <a class="nav-link fw-bold px-3 link-light link-opacity-50-hover" href="#">Arborele</a>
+        <a class="nav-link fw-bold px-3 link-light link-opacity-50-hover" href="#">Persoanele</a>
+        <a class="nav-link fw-bold px-3 link-light link-opacity-50-hover" href="#">Imagini</a>
+        <a class="nav-link fw-bold px-3 link-light link-opacity-50-hover" href="#">Mesaje</a>
       </nav>
     </div>
-  </header>
+    </header>
+  -->
+  
 
-  <main class="mt-3">
-    <h1 class="fw-bolder" style="font-size: 4rem;">my_GENEALOGY</h1>
-    <p class="lead">Arborele genealogic al familiei<br>
-      <span class="lead fs-1 fw-bolder">BARSAN</span><br>
-      Tulghes (HR)</p>
+  <main class="mt-4">
+    <div class="container glass_style py-4 my-2">
+    <h1 class="fw-bold">my_GENEALOGY</h1>
+    <p class="lead fw-bolder">Arborele genealogic al familiei</p>
+      <h2 class="lead fs-1 fw-bolder">BARSAN</h2>
+  </div>
     <div class="container">
       <!-- 
         <p class="lead my-5">
@@ -176,43 +219,44 @@
         <a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white">Learn more</a>
        -->
        <div class="row lead my-3">
-        <div class="col">
-      <a href="#" class="btn btn-lg btn-dark"><i class="bi bi-people" style="font-size: 5rem;"></i><br>Arborele</a>
+        <div class="col-md-3 col-sm-6 my-1">
+      <a href="#" class="btn btn-lg btn-success"><i class="bi bi-people" style="font-size: 4rem;"></i><br>Arborele</a>
       </div>
-      <div class="col">
-      <a href="#" class="btn btn-lg btn-dark"><i class="bi bi-person-vcard" style="font-size: 5rem;"></i><br>Persoanele</a>
+      <div class="col-md-3 col-sm-6 my-1">
+      <a href="#" class="btn btn-lg btn-success"><i class="bi bi-person-vcard" style="font-size: 4rem;"></i><br>Persoanele</a>
     </div>
-    <div class="col">
-      <a href="#" class="btn btn-lg btn-dark"><i class="bi bi-images" style="font-size: 5rem;"></i><br>Imagini</a>
+    <div class="col-md-3 col-sm-6 my-1">
+      <a href="#" class="btn btn-lg btn-success"><i class="bi bi-images" style="font-size: 4rem;"></i><br>Imagini</a>
     </div>
-      <div class="col">
-      <a href="#" class="btn btn-lg btn-dark"><i class="bi bi-chat-square-text" style="font-size: 5rem;"></i><br>Mesaje</a>
+      <div class="col-md-3 col-sm-6 my-1">
+      <a href="#" class="btn btn-lg btn-success"><i class="bi bi-chat-square-text" style="font-size: 4rem;"></i><br>Mesaje</a>
       </div>
     </div>
   </div>
   <!-- Quote:-->
-  
-  <figure class="text-center text-secondary">
-    <hr class="border border-secondary border-1 w-25 m-auto my-2">
+  <div class="container m-auto">
+  <figure class="text-center text-secondary text-light mt-5 glass_style">
+    <!-- <hr class="border border-success border-1 w-25 m-auto my-2"> -->
     <blockquote class="blockquote">
       <p>"Cine-şi uită strămoşii e ca un râu fără izvor, ca un arbore fără rădăcini."</p>
     </blockquote>
-    <figcaption class="blockquote-footer">
+    <figcaption class="blockquote-footer text-light">
       <cite title="Source Title">proverb chinezesc</cite>
     </figcaption>
   </figure>
-  <figure class="text-center text-secondary">
+  <figure class="text-center text-secondary text-light glass_style">
     <blockquote class="blockquote">
       <p>"Binecuvântat cel care reuşeşte să le dea copiilor lui aripi şi rădăcini."</p>
     </blockquote>
-    <figcaption class="blockquote-footer">
+    <figcaption class="blockquote-footer text-light">
       <cite title="Source Title">proverb arab</cite>
     </figcaption>
-    <hr class="border border-secondary border-1 w-25 m-auto my-2">
+    <!-- <hr class="border border-success border-1 w-25 m-auto my-2"> -->
   </figure>
+</div>
   </main>
   
-  <footer class="mt-0 text-white-50">
+  <footer class="my-auto text-white-50">
     <p class="text-white">&copy; adiB 2023 by <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>.</p>
   </footer>
 </div>
